@@ -1,0 +1,24 @@
+navbar{
+    position: fixed;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $third-color;
+    color: $base-color;
+    border-radius: 15px;
+    padding: 10px;
+    
+
+    a{
+        margin: 0 10px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 16px;
+        color: $base-color;
+        text-decoration: none !important; 
+        &:hover{
+            color: $second-color;
+        }
+    }
+}
+

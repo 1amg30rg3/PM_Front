@@ -1,0 +1,195 @@
+.manageProduct{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-radius: 8px;
+    padding: 20px;
+    gap: 30px;
+
+    .product-store{
+        width: 400px;
+        
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: $fourth-color;
+
+        .content{
+            padding: 20px;
+            
+        }
+        h3{
+            background-color: $third-color;
+            padding: 20px;
+            color: $base-color;
+            text-align: center;
+            margin: 0;
+        }
+        .f_item{
+            margin-top: 20px;
+
+            &:first-child{
+                margin: 0;
+            }
+
+            label{
+                display: block;
+                text-transform: capitalize;
+                font-size: 14px;
+                padding-bottom: 5px;
+            }
+        }
+        .categoryChoose{
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: center;
+            gap: 10px
+        }
+
+        .categorySelected{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 40px;
+            margin-right: 22px;
+            align-items: center;
+            div{
+                
+                position: relative;
+                display: inline-block;
+                background-color: $second-color;
+                padding: 10px;
+                margin: 10px 0;
+
+
+                      
+
+                .delete{
+                    position: absolute;
+                    color: red;
+
+                    border-radius: 3px;
+                    padding: 2px;
+                    font-weight: 600;
+                    font-size: 20px;
+                    top: -3px;
+                    right: -22px;
+                    cursor: pointer;
+
+                    &:hover{
+                        color: darken(red, 15%);
+                    }
+                }
+            }
+        }
+
+        .file-selected{
+            display: inline-block;
+            background-color: $second-color;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select,
+        textarea {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 10px;
+            background-color: $base-color;
+            color: $third-color;
+            resize: none;
+        
+            &::placeholder {
+                color: #999;
+            }
+            &:focus{
+                outline: 1px solid $second-color;
+            }
+        }
+
+        .file-upload {
+            position: relative;
+        }
+        
+        .file-label {
+            display: inline-block;
+            background-color: #e9e9e9;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .file-text {
+            font-size: 16px;
+            color: #555555;
+        }
+          
+        .file-button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #3498db;
+            padding: 8px 16px;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+        
+        .file-input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        button,
+        btn {
+            padding: 8px 16px;
+            background-color: $second-color;
+            color: $base-color;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+  
+            &:hover {
+              background-color: darken($second-color, 10%);
+            }
+        }
+    }
+}
+
+
+
+.success-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: $second-color;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    transition: opacity 0.3s ease-in-out;
+  
+    &.show {
+      opacity: 1;
+    }
+  
+    &.hide {
+      opacity: 0;
+    }
+  }

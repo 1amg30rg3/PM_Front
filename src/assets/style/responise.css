@@ -1,0 +1,13 @@
+@media only screen and (max-width: 767px) {
+  .produc_view .slider img,
+  .produc_view .carousel_mm {
+    height: 350px;
+  }
+  .manageProduct,
+  .products {
+    padding: 20px 5px;
+  }
+  .produc_view .products {
+    padding: 10px;
+  }
+}

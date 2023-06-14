@@ -1,0 +1,14 @@
+navbar {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: red;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+navbar router-link {
+  margin: 0 10px;
+  cursor: pointer;
+}
